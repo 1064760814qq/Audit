@@ -1,0 +1,31 @@
+{
+  "MultiCallHelper": {
+    "address": "0x9e255Bf0096Cd15261fFA9Ac4F21b74b7bc19c00"
+  },
+  "GuardianStorage": {
+    "address": "0xBCEd12cfd0D8f5Bf82b0D965DAcdb60a1525283C"
+  },
+  "TransferStorage": {
+    "address": "0xBFf5389483691c43581F446984b64fc502469504"
+  },
+  "ModuleRegistry": {
+    "address": "0x92B46406248442931802170A7580b1469bdF37b2"
+  },
+  "BaseWallet": {
+    "address": "0x8922A8F4482479C5BfaC9B97106E655833899d9E"
+  },
+  "Proxy": {
+    "address": "0x93220F8f28Ec28b8F611552B36Eb4344DBcABAef"
+  },
+  "WalletFactory": {
+    "address": "0xc44ec87Da7bD2C01BaD3e0fD08f0a00704c1597F",
+    "manage": "0xd25487fcFcBE58A2415de55aa578Df06D9D2386c"
+  },
+  "Uni2": {
+    "address": "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+  },
+  "EchoooModule": {
+    "address": "0x10955b290F3fe8FE2ad2626E3A10d2C3f08251F8",
+    "refundAddress": "0x61D983E92d5049C60dC360C428f6758B09D5dE39"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "GuardianStorage": {
+    "address": "0x5CB8522b37Bb0458b58f2720f4BbDb2F99A4e128"
+  },
+  "TransferStorage": {
+    "address": "0x0d79763487F78288D963f45325020563A1616cae"
+  },
+  "ModuleRegistry": {
+    "address": "0xa1194F3d2ced9171e8fFb0ADD6648b01ED0361B7"
+  },
+  "BaseWallet": {
+    "address": "0x3F6cf357BD4a0382Cb7687033cf9bA6548F486a7"
+  },
+  "Proxy": {
+    "address": "0xC9FB1451b7E8A4bFe3AF6B35a00C58f368719008"
+  },
+  "WalletFactory": {
+    "address": "0x1661c63B7dD8edad6c6671Ed8bbEc0D8944A2cc6",
+    "manage": "0x404E4949Db2f9df22a153fb91a9df0b777fFbD0A"
+  },
+  "Uni2": {
+    "address": "0xbdd4e5660839a088573191A9889A262c0Efc0983"
+  },
+  "EchoooModule": {
+    "address": "0x184d2AC25B16747B79089aE696961cd46622F664",
+    "manage": "0x404E4949Db2f9df22a153fb91a9df0b777fFbD0A"
+  }
+}
