@@ -78,83 +78,21 @@ const config: HardhatUserConfig = {
   paths: {
     sources: contractSource,
   },
-  networks: {
-    hardhat: {
-      chainId: 9527,
-      accounts: {
-        mnemonic: process.env.MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 10,
-        accountsBalance: BALANCE,
+    networks: {
+      hardhat: {
+        forking: {
+          url: "https://polygon-mainnet.g.alchemy.com/v2/lKsPH03Bqn3oMk7hBnDYhYmNI_4Fmqm0",
+        }
       },
-      forking: {
-       // url: "https://eth-goerli.g.alchemy.com/v2/pQ_i8o-4xJTQPfhVJH1AzIPB7mpIdbh7" 
-       url: "https://eth-mainnet.g.alchemy.com/v2/jz79v5kY5cDsz0fp3RH_VK37IKtU4Rdu",
-      },
+      local: {
+        url: 'http://127.0.0.1:8545',
+      }
     },
     localhost: {
       url: "http://127.0.0.1:8545",
       chainId:9527,
       //kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
     },
-    forkEth: {
-      //url: "http://127.0.0.1:8545",
-      url: "http://Bastion-goerli-595491602.ap-southeast-1.elb.amazonaws.com:8221",
-      chainId:9527,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    ganache: {
-      url:"http://127.0.0.1:8545",
-      allowUnlimitedContractSize: false,
-      accounts: {
-        mnemonic: process.env.MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 10,
-      }
-    },
-    mainnet: {
-      url: "https://eth-mainnet.g.alchemy.com/v2/jz79v5kY5cDsz0fp3RH_VK37IKtU4Rdu",
-      chainId: Number(process.env.CHAINID),
-      timeout: 100000,
-      minMaxFeePerGas:50000000000,
-      minMaxPriorityFeePerGas:1500000000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    goerli: {
-      url: "https://eth-goerli.g.alchemy.com/v2/pQ_i8o-4xJTQPfhVJH1AzIPB7mpIdbh7",
-      chainId: Number(process.env.CHAINID),
-      timeout: 100000,
-      minMaxFeePerGas:50000000000,
-      minMaxPriorityFeePerGas:1500000000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    bsc: {
-      url: "https://bsc-dataseed1.ninicoin.io",
-      chainId: 56,
-      timeout: 100000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    bscTest: {
-      url: "https://data-seed-prebsc-1-s3.binance.org:8545/",
-      chainId: 97,
-      timeout: 100000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/vTm14J_YWEIi9VBmvm3Xf5T4LstCmcT7",
-      chainId: 80001,
-      timeout: 100000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-    prod: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_ID}`,
-      chainId: 1,
-      timeout: 100000,
-      kmsKeyId: process.env.INFRASTRUCTURE_KMSID,
-    },
-  },
   solidity: {
     compilers: [
       {
